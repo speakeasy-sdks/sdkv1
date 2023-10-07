@@ -15,17 +15,18 @@ Delete a post
 
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { DeletePostsIdResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.post.deletePostsId({
-  id: "<ID>",
-}).then((res: DeletePostsIdResponse) => {
+  const res = await sdk.post.deletePostsId({
+    id: "<ID>",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -49,17 +50,18 @@ Get a single post
 
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { GetPostsIdResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.post.getPostsId({
-  id: "<ID>",
-}).then((res: GetPostsIdResponse) => {
+  const res = await sdk.post.getPostsId({
+    id: "<ID>",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -83,23 +85,19 @@ Update a post
 
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { PutPostsIdResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.post.putPostsId({
-  id: "<ID>",
-  post: {
-    body: "whoever",
-    id: 9539.46,
-    title: "Tennessine hacking",
-    userId: 476.95,
-  },
-}).then((res: PutPostsIdResponse) => {
+  const res = await sdk.post.putPostsId({
+    id: "<ID>",
+    post: {},
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

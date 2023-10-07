@@ -7,15 +7,15 @@
 </div>
 
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
-## NPM
+### NPM
 
 ```bash
 npm add jsonplaceholdertest
 ```
 
-## Yarn
+### Yarn
 
 ```bash
 yarn add jsonplaceholdertest
@@ -24,43 +24,40 @@ yarn add jsonplaceholdertest
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { DeletePostsIdResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.post.deletePostsId({
-  id: "<ID>",
-}).then((res: DeletePostsIdResponse) => {
+  const res = await sdk.post.deletePostsId({
+    id: "<ID>",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
 
-## [post](docs/sdks/post/README.md)
+### [post](docs/sdks/post/README.md)
 
 * [deletePostsId](docs/sdks/post/README.md#deletepostsid) - Delete a post
 * [getPostsId](docs/sdks/post/README.md#getpostsid) - Get a single post
 * [putPostsId](docs/sdks/post/README.md#putpostsid) - Update a post
 
-## [posts](docs/sdks/posts/README.md)
+### [posts](docs/sdks/posts/README.md)
 
 * [getPosts](docs/sdks/posts/README.md#getposts) - Returns all posts
 * [postPosts](docs/sdks/posts/README.md#postposts) - Create a new post
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
@@ -72,8 +69,6 @@ returned response object will have a `next` method that can be called to pull do
 return value of `next` is `null`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->

@@ -3,16 +3,17 @@
 
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { DeletePostsIdResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.post.deletePostsId({
-  id: "<ID>",
-}).then((res: DeletePostsIdResponse) => {
+  const res = await sdk.post.deletePostsId({
+    id: "<ID>",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 <!-- End SDK Example Usage -->

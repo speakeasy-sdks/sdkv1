@@ -14,15 +14,16 @@ Returns all posts
 
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { GetPostsResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.posts.getPosts().then((res: GetPostsResponse) => {
+  const res = await sdk.posts.getPosts();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -45,20 +46,16 @@ Create a new post
 
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
-import { PostPostsResponse } from "jsonplaceholdertest/dist/sdk/models/operations";
 
-const sdk = new Jsonplaceholdertest();
+(async() => {
+  const sdk = new Jsonplaceholdertest();
 
-sdk.posts.postPosts({
-  body: "Operative haptic",
-  id: 7574.44,
-  title: "Stage brightly morph",
-  userId: 175.83,
-}).then((res: PostPostsResponse) => {
+  const res = await sdk.posts.postPosts({});
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
