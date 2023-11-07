@@ -7,9 +7,7 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 (async () => {
     const sdk = new Jsonplaceholdertest();
 
-    const res = await sdk.post.deletePostsId({
-        id: "<ID>",
-    });
+    const res = await sdk.posts.getPosts();
 
     if (res.statusCode == 200) {
         // handle response

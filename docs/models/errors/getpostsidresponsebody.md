@@ -1,4 +1,4 @@
-# DeletePostsId404ApplicationJSON
+# GetPostsIdResponseBody
 
 Post not found
 

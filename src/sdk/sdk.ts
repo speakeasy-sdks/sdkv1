@@ -48,9 +48,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "0.1.0";
-    sdkVersion = "0.3.0";
-    genVersion = "2.171.0";
-    userAgent = "speakeasy-sdk/typescript 0.3.0 2.171.0 0.1.0 jsonplaceholdertest";
+    sdkVersion = "0.4.0";
+    genVersion = "2.181.1";
+    userAgent = "speakeasy-sdk/typescript 0.4.0 2.181.1 0.1.0 jsonplaceholdertest";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -63,8 +63,8 @@ export class SDKConfiguration {
  * @see {@link https://jsonplaceholder.typicode.com/guide} - JSON Placeholder's guide
  */
 export class Jsonplaceholdertest {
-    public post: Post;
     public posts: Posts;
+    public post: Post;
 
     private sdkConfiguration: SDKConfiguration;
 
@@ -83,7 +83,7 @@ export class Jsonplaceholdertest {
             retryConfig: props?.retryConfig,
         });
 
-        this.post = new Post(this.sdkConfiguration);
         this.posts = new Posts(this.sdkConfiguration);
+        this.post = new Post(this.sdkConfiguration);
     }
 }

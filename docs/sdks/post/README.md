@@ -1,5 +1,5 @@
 # Post
-(*post*)
+(*.post*)
 
 ### Available Operations
 
@@ -22,6 +22,7 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   const res = await sdk.post.deletePostsId({
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -58,6 +59,7 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     id: "<ID>",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -93,6 +95,7 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     id: "<ID>",
     post: {},
   });
+
 
   if (res.statusCode == 200) {
     // handle response

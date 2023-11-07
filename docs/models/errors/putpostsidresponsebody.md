@@ -1,4 +1,4 @@
-# GetPostsId404ApplicationJSON
+# PutPostsIdResponseBody
 
 Post not found
 

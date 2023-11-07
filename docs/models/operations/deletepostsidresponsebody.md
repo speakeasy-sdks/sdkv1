@@ -1,4 +1,4 @@
-# DeletePostsId200ApplicationJSON
+# DeletePostsIdResponseBody
 
 All went well
 

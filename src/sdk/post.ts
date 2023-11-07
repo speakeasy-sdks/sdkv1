@@ -3,9 +3,9 @@
  */
 
 import * as utils from "../internal/utils";
-import * as errors from "./models/errors";
-import * as operations from "./models/operations";
-import * as shared from "./models/shared";
+import * as errors from "../sdk/models/errors";
+import * as operations from "../sdk/models/operations";
+import * as shared from "../sdk/models/shared";
 import { SDKConfiguration } from "./sdk";
 import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
@@ -62,9 +62,9 @@ export class Post {
         switch (true) {
             case httpRes?.status == 200:
                 if (utils.matchContentType(contentType, `application/json`)) {
-                    res.deletePostsId200ApplicationJSONObject = utils.objectToClass(
+                    res.twoHundredApplicationJsonObject = utils.objectToClass(
                         JSON.parse(decodedRes),
-                        operations.DeletePostsId200ApplicationJSON
+                        operations.DeletePostsIdResponseBody
                     );
                 } else {
                     throw new errors.SDKError(
@@ -79,10 +79,10 @@ export class Post {
                 if (utils.matchContentType(contentType, `application/json`)) {
                     const err = utils.objectToClass(
                         JSON.parse(decodedRes),
-                        errors.DeletePostsId404ApplicationJSON
+                        errors.DeletePostsIdResponseBody
                     );
                     err.rawResponse = httpRes;
-                    throw new errors.DeletePostsId404ApplicationJSON(err);
+                    throw new errors.DeletePostsIdResponseBody(err);
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,
@@ -165,10 +165,10 @@ export class Post {
                 if (utils.matchContentType(contentType, `application/json`)) {
                     const err = utils.objectToClass(
                         JSON.parse(decodedRes),
-                        errors.GetPostsId404ApplicationJSON
+                        errors.GetPostsIdResponseBody
                     );
                     err.rawResponse = httpRes;
-                    throw new errors.GetPostsId404ApplicationJSON(err);
+                    throw new errors.GetPostsIdResponseBody(err);
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,
@@ -263,10 +263,10 @@ export class Post {
                 if (utils.matchContentType(contentType, `application/json`)) {
                     const err = utils.objectToClass(
                         JSON.parse(decodedRes),
-                        errors.PutPostsId404ApplicationJSON
+                        errors.PutPostsIdResponseBody
                     );
                     err.rawResponse = httpRes;
-                    throw new errors.PutPostsId404ApplicationJSON(err);
+                    throw new errors.PutPostsIdResponseBody(err);
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,

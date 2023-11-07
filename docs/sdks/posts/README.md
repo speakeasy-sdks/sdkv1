@@ -1,5 +1,5 @@
 # Posts
-(*posts*)
+(*.posts*)
 
 ### Available Operations
 
@@ -19,6 +19,7 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.posts.getPosts();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -51,6 +52,7 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.posts.postPosts({});
+
 
   if (res.statusCode == 200) {
     // handle response

@@ -9,7 +9,7 @@ import { classToPlain, Exclude } from "class-transformer";
 /**
  * Post not found
  */
-export class DeletePostsId404ApplicationJSON extends Error {
+export class DeletePostsIdResponseBody extends Error {
     /**
      * Raw HTTP response; suitable for custom response parsing
      */
@@ -17,7 +17,7 @@ export class DeletePostsId404ApplicationJSON extends Error {
     @Exclude()
     rawResponse?: AxiosResponse;
 
-    constructor(err?: DeletePostsId404ApplicationJSON) {
+    constructor(err?: DeletePostsIdResponseBody) {
         super();
         if (err) {
             Object.assign(this, err);
@@ -26,7 +26,7 @@ export class DeletePostsId404ApplicationJSON extends Error {
             );
         }
 
-        this.name = "DeletePostsId404ApplicationJSON";
-        Object.setPrototypeOf(this, DeletePostsId404ApplicationJSON.prototype);
+        this.name = "DeletePostsIdResponseBody";
+        Object.setPrototypeOf(this, DeletePostsIdResponseBody.prototype);
     }
 }

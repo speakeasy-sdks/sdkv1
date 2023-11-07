@@ -16,9 +16,15 @@ export class DeletePostsIdRequest extends SpeakeasyBase {
 /**
  * All went well
  */
-export class DeletePostsId200ApplicationJSON extends SpeakeasyBase {}
+export class DeletePostsIdResponseBody extends SpeakeasyBase {}
 
 export class DeletePostsIdResponse extends SpeakeasyBase {
+    /**
+     * All went well
+     */
+    @SpeakeasyMetadata()
+    twoHundredApplicationJsonObject?: DeletePostsIdResponseBody;
+
     /**
      * HTTP response content type for this operation
      */
@@ -36,10 +42,4 @@ export class DeletePostsIdResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
-
-    /**
-     * All went well
-     */
-    @SpeakeasyMetadata()
-    deletePostsId200ApplicationJSONObject?: DeletePostsId200ApplicationJSON;
 }
