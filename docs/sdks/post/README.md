@@ -1,5 +1,5 @@
 # Post
-(*.post*)
+(*post*)
 
 ### Available Operations
 
@@ -23,7 +23,6 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -32,16 +31,21 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
 ### Parameters
 
-| Parameter                                                                          | Type                                                                               | Required                                                                           | Description                                                                        |
-| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `request`                                                                          | [operations.DeletePostsIdRequest](../../models/operations/deletepostsidrequest.md) | :heavy_check_mark:                                                                 | The request object to use for the request.                                         |
-| `config`                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                       | :heavy_minus_sign:                                                                 | Available config options for making requests.                                      |
+| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `request`                                                                              | [operations.DeletePostsIdRequest](../../sdk/models/operations/deletepostsidrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
+| `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
 
 
 ### Response
 
-**Promise<[operations.DeletePostsIdResponse](../../models/operations/deletepostsidresponse.md)>**
+**Promise<[operations.DeletePostsIdResponse](../../sdk/models/operations/deletepostsidresponse.md)>**
+### Errors
 
+| Error Object                     | Status Code                      | Content Type                     |
+| -------------------------------- | -------------------------------- | -------------------------------- |
+| errors.DeletePostsIdResponseBody | 404                              | application/json                 |
+| errors.SDKError                  | 400-600                          | */*                              |
 
 ## getPostsId
 
@@ -59,7 +63,6 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -68,16 +71,21 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
 ### Parameters
 
-| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `request`                                                                    | [operations.GetPostsIdRequest](../../models/operations/getpostsidrequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
-| `config`                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                 | :heavy_minus_sign:                                                           | Available config options for making requests.                                |
+| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `request`                                                                        | [operations.GetPostsIdRequest](../../sdk/models/operations/getpostsidrequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
+| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
 
 
 ### Response
 
-**Promise<[operations.GetPostsIdResponse](../../models/operations/getpostsidresponse.md)>**
+**Promise<[operations.GetPostsIdResponse](../../sdk/models/operations/getpostsidresponse.md)>**
+### Errors
 
+| Error Object                  | Status Code                   | Content Type                  |
+| ----------------------------- | ----------------------------- | ----------------------------- |
+| errors.GetPostsIdResponseBody | 404                           | application/json              |
+| errors.SDKError               | 400-600                       | */*                           |
 
 ## putPostsId
 
@@ -96,7 +104,6 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     post: {},
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -105,13 +112,18 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
 ### Parameters
 
-| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `request`                                                                    | [operations.PutPostsIdRequest](../../models/operations/putpostsidrequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
-| `config`                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                 | :heavy_minus_sign:                                                           | Available config options for making requests.                                |
+| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `request`                                                                        | [operations.PutPostsIdRequest](../../sdk/models/operations/putpostsidrequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
+| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
 
 
 ### Response
 
-**Promise<[operations.PutPostsIdResponse](../../models/operations/putpostsidresponse.md)>**
+**Promise<[operations.PutPostsIdResponse](../../sdk/models/operations/putpostsidresponse.md)>**
+### Errors
 
+| Error Object                  | Status Code                   | Content Type                  |
+| ----------------------------- | ----------------------------- | ----------------------------- |
+| errors.PutPostsIdResponseBody | 404                           | application/json              |
+| errors.SDKError               | 400-600                       | */*                           |

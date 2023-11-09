@@ -1,5 +1,5 @@
 # Posts
-(*.posts*)
+(*posts*)
 
 ### Available Operations
 
@@ -20,7 +20,6 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
   const res = await sdk.posts.getPosts();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -36,8 +35,12 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
 ### Response
 
-**Promise<[operations.GetPostsResponse](../../models/operations/getpostsresponse.md)>**
+**Promise<[operations.GetPostsResponse](../../sdk/models/operations/getpostsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postPosts
 
@@ -53,7 +56,6 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
   const res = await sdk.posts.postPosts({});
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -64,11 +66,15 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
 | Parameter                                                    | Type                                                         | Required                                                     | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `request`                                                    | [shared.Post](../../models/shared/post.md)                   | :heavy_check_mark:                                           | The request object to use for the request.                   |
+| `request`                                                    | [shared.Post](../../sdk/models/shared/post.md)               | :heavy_check_mark:                                           | The request object to use for the request.                   |
 | `config`                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config) | :heavy_minus_sign:                                           | Available config options for making requests.                |
 
 
 ### Response
 
-**Promise<[operations.PostPostsResponse](../../models/operations/postpostsresponse.md)>**
+**Promise<[operations.PostPostsResponse](../../sdk/models/operations/postpostsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

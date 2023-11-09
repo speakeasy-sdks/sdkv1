@@ -1,4 +1,4 @@
-# GetPostsResponse
+# PostPostsResponse
 
 
 ## Fields
@@ -8,4 +8,4 @@
 | `contentType`                                           | *string*                                                | :heavy_check_mark:                                      | HTTP response content type for this operation           |
 | `statusCode`                                            | *number*                                                | :heavy_check_mark:                                      | HTTP response status code for this operation            |
 | `rawResponse`                                           | [AxiosResponse](https://axios-http.com/docs/res_schema) | :heavy_minus_sign:                                      | Raw HTTP response; suitable for custom response parsing |
-| `post`                                                  | [shared.Post](../../models/shared/post.md)              | :heavy_minus_sign:                                      | All went well                                           |
+| `post`                                                  | [shared.Post](../../../sdk/models/shared/post.md)       | :heavy_minus_sign:                                      | A post was created                                      |

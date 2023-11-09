@@ -44,12 +44,12 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
 ## Available Resources and Operations
 
 
-### [.posts](docs/sdks/posts/README.md)
+### [posts](docs/sdks/posts/README.md)
 
 * [getPosts](docs/sdks/posts/README.md#getposts) - Returns all posts
 * [postPosts](docs/sdks/posts/README.md#postposts) - Create a new post
 
-### [.post](docs/sdks/post/README.md)
+### [post](docs/sdks/post/README.md)
 
 * [deletePostsId](docs/sdks/post/README.md#deletepostsid) - Delete a post
 * [getPostsId](docs/sdks/post/README.md#getpostsid) - Get a single post
@@ -75,7 +75,12 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object                     | Status Code                      | Content Type                     |
+| -------------------------------- | -------------------------------- | -------------------------------- |
+| errors.DeletePostsIdResponseBody | 404                              | application/json                 |
+| errors.SDKError                  | 400-600                          | */*                              |
 
 
 ## Example
@@ -93,11 +98,10 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     id: "<ID>",
   });
   } catch (e) { 
-    if (e instanceof 404_application/json_object) {
+    if (e instanceof errors.DeletePostsIdResponseBody) {
       console.error(e) // handle exception 
     
   }
-
 
   if (res.statusCode == 200) {
     // handle response
@@ -182,8 +186,6 @@ const httpClient = axios.create({
 
 const sdk = new Jsonplaceholdertest({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->

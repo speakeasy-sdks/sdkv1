@@ -24,7 +24,7 @@ export class Posts {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/posts";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/posts";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/json";
@@ -33,7 +33,7 @@ export class Posts {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -93,7 +93,7 @@ export class Posts {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/posts";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/posts";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -113,7 +113,7 @@ export class Posts {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
