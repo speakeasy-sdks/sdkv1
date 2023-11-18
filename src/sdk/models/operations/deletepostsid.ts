@@ -20,12 +20,6 @@ export class DeletePostsIdResponseBody extends SpeakeasyBase {}
 
 export class DeletePostsIdResponse extends SpeakeasyBase {
     /**
-     * All went well
-     */
-    @SpeakeasyMetadata()
-    twoHundredApplicationJsonObject?: DeletePostsIdResponseBody;
-
-    /**
      * HTTP response content type for this operation
      */
     @SpeakeasyMetadata()
@@ -42,4 +36,10 @@ export class DeletePostsIdResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse: AxiosResponse;
+
+    /**
+     * All went well
+     */
+    @SpeakeasyMetadata()
+    object?: DeletePostsIdResponseBody;
 }

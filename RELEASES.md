@@ -79,3 +79,13 @@ Based on:
 - [typescript v0.4.3] .
 ### Releases
 - [NPM v0.4.3] https://www.npmjs.com/package/jsonplaceholdertest/v/0.4.3 - .
+
+## 2023-11-18 01:16:12
+### Changes
+Based on:
+- OpenAPI Doc 0.1.0 
+- Speakeasy CLI 1.121.1 (2.194.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [typescript v0.4.4] .
+### Releases
+- [NPM v0.4.4] https://www.npmjs.com/package/jsonplaceholdertest/v/0.4.4 - .
