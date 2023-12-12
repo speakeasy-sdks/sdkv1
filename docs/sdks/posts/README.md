@@ -15,7 +15,7 @@ Returns all posts
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
-(async() => {
+async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.posts.getPosts();
@@ -23,7 +23,9 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -51,7 +53,7 @@ Create a new post
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
-(async() => {
+async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.posts.postPosts({});
@@ -59,7 +61,9 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

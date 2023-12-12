@@ -1,8 +1,8 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
-(async () => {
+async function run() {
     const sdk = new Jsonplaceholdertest();
 
     const res = await sdk.posts.getPosts();
@@ -10,7 +10,9 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

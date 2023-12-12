@@ -16,7 +16,7 @@ Delete a post
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
-(async() => {
+async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.post.deletePostsId({
@@ -26,7 +26,9 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -56,7 +58,7 @@ Get a single post
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
-(async() => {
+async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.post.getPostsId({
@@ -66,7 +68,9 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -96,7 +100,7 @@ Update a post
 ```typescript
 import { Jsonplaceholdertest } from "jsonplaceholdertest";
 
-(async() => {
+async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.post.putPostsId({
@@ -107,7 +111,9 @@ import { Jsonplaceholdertest } from "jsonplaceholdertest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

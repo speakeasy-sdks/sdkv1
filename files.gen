@@ -32,7 +32,6 @@ src/sdk/models/errors/putpostsid.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/getpostsresponse.md
 docs/sdk/models/operations/postpostsresponse.md
 docs/sdk/models/operations/deletepostsidrequest.md
@@ -49,4 +48,5 @@ docs/sdk/models/errors/putpostsidresponsebody.md
 docs/sdks/jsonplaceholdertest/README.md
 docs/sdks/posts/README.md
 docs/sdks/post/README.md
+USAGE.md
 .gitattributes
