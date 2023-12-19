@@ -47,7 +47,7 @@ run();
 | Error Object                     | Status Code                      | Content Type                     |
 | -------------------------------- | -------------------------------- | -------------------------------- |
 | errors.DeletePostsIdResponseBody | 404                              | application/json                 |
-| errors.SDKError                  | 400-600                          | */*                              |
+| errors.SDKError                  | 4xx-5xx                          | */*                              |
 
 ## getPostsId
 
@@ -89,7 +89,7 @@ run();
 | Error Object                  | Status Code                   | Content Type                  |
 | ----------------------------- | ----------------------------- | ----------------------------- |
 | errors.GetPostsIdResponseBody | 404                           | application/json              |
-| errors.SDKError               | 400-600                       | */*                           |
+| errors.SDKError               | 4xx-5xx                       | */*                           |
 
 ## putPostsId
 
@@ -132,4 +132,4 @@ run();
 | Error Object                  | Status Code                   | Content Type                  |
 | ----------------------------- | ----------------------------- | ----------------------------- |
 | errors.PutPostsIdResponseBody | 404                           | application/json              |
-| errors.SDKError               | 400-600                       | */*                           |
+| errors.SDKError               | 4xx-5xx                       | */*                           |
