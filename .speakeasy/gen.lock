@@ -1,0 +1,70 @@
+lockVersion: 2.0.0
+id: 1e428f4a-a8e5-4632-85d9-246e228d17ee
+management:
+  docChecksum: 12065ae46312d3a87ec13b96a03ff91e
+  docVersion: 0.1.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.5.1
+  configChecksum: fcdefa1ca45188e0159222d098854dcb
+  repoURL: https://github.com/speakeasy-sdks/sdkv1.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/sdkv1
+  published: true
+features:
+  typescript:
+    core: 3.4.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/posts.ts
+  - src/sdk/post.ts
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/sdk/models/errors/sdkerror.ts
+  - src/sdk/types/index.ts
+  - src/sdk/types/rfcdate.ts
+  - tsconfig.json
+  - src/sdk/models/operations/getposts.ts
+  - src/sdk/models/operations/postposts.ts
+  - src/sdk/models/operations/deletepostsid.ts
+  - src/sdk/models/operations/getpostsid.ts
+  - src/sdk/models/operations/putpostsid.ts
+  - src/sdk/models/shared/post.ts
+  - src/sdk/models/errors/deletepostsid.ts
+  - src/sdk/models/errors/getpostsid.ts
+  - src/sdk/models/errors/putpostsid.ts
+  - src/sdk/models/errors/index.ts
+  - src/sdk/models/operations/index.ts
+  - src/sdk/models/shared/index.ts
+  - docs/sdk/models/operations/getpostsresponse.md
+  - docs/sdk/models/operations/postpostsresponse.md
+  - docs/sdk/models/operations/deletepostsidrequest.md
+  - docs/sdk/models/operations/deletepostsidresponsebody.md
+  - docs/sdk/models/operations/deletepostsidresponse.md
+  - docs/sdk/models/operations/getpostsidrequest.md
+  - docs/sdk/models/operations/getpostsidresponse.md
+  - docs/sdk/models/operations/putpostsidrequest.md
+  - docs/sdk/models/operations/putpostsidresponse.md
+  - docs/sdk/models/shared/post.md
+  - docs/sdk/models/errors/deletepostsidresponsebody.md
+  - docs/sdk/models/errors/getpostsidresponsebody.md
+  - docs/sdk/models/errors/putpostsidresponsebody.md
+  - docs/sdks/jsonplaceholdertest/README.md
+  - docs/sdks/posts/README.md
+  - docs/sdks/post/README.md
+  - USAGE.md
+  - .gitattributes
