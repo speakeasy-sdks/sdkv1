@@ -83,7 +83,7 @@ async function run() {
     let res;
     try {
         res = await sdk.post.deletePostsId({
-            id: "<ID>",
+            id: "<id>",
         });
     } catch (err) {
         if (err instanceof errors.DeletePostsIdResponseBody) {

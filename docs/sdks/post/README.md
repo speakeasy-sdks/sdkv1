@@ -20,7 +20,7 @@ async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.post.deletePostsId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -62,7 +62,7 @@ async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.post.getPostsId({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -104,7 +104,7 @@ async function run() {
   const sdk = new Jsonplaceholdertest();
 
   const res = await sdk.post.putPostsId({
-    id: "<ID>",
+    id: "<id>",
     post: {},
   });
 

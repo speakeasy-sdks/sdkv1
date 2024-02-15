@@ -1,6 +1,6 @@
 {
   "name": "jsonplaceholdertest",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": "sdkv1",
   "scripts": {
     "prepare": "tsc --build",
